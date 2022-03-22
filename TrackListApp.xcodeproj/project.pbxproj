@@ -13,6 +13,7 @@
 		001ECA1C27EA27B000185130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001ECA1B27EA27B000185130 /* Assets.xcassets */; };
 		001ECA1F27EA27B000185130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001ECA1D27EA27B000185130 /* LaunchScreen.storyboard */; };
 		00F4207627EA36F20026D495 /* TrackListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4207527EA36F20026D495 /* TrackListViewController.swift */; };
+		00F4207827EA40190026D495 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4207727EA40190026D495 /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		001ECA1E27EA27B000185130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001ECA2027EA27B000185130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F4207527EA36F20026D495 /* TrackListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewController.swift; sourceTree = "<group>"; };
+		00F4207727EA40190026D495 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				001ECA1D27EA27B000185130 /* LaunchScreen.storyboard */,
 				001ECA2027EA27B000185130 /* Info.plist */,
 				00F4207527EA36F20026D495 /* TrackListViewController.swift */,
+				00F4207727EA40190026D495 /* Track.swift */,
 			);
 			path = TrackListApp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				001ECA1327EA27AF00185130 /* AppDelegate.swift in Sources */,
 				001ECA1527EA27AF00185130 /* SceneDelegate.swift in Sources */,
 				00F4207627EA36F20026D495 /* TrackListViewController.swift in Sources */,
+				00F4207827EA40190026D495 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
