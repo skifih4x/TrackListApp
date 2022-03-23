@@ -40,17 +40,45 @@
             </objects>
             <point key="canvasLocation" x="794" y="-32"/>
         </scene>
-        <!--View Controller-->
+        <!--Track Details View Controller-->
         <scene sceneID="gvw-Y1-uVO">
             <objects>
-                <viewController id="xpO-pA-rSh" sceneMemberID="viewController">
+                <viewController id="xpO-pA-rSh" customClass="TrackDetailsViewController" customModule="TrackListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sgk-WP-Qv4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PPo-lJ-qZ7">
+                                <rect key="frame" x="20" y="55" width="280" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOf-AA-Wmq">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="334.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEJ-be-APk">
+                                        <rect key="frame" x="0.0" y="354.5" width="280" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="UFY-TI-vay"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yE9-Ef-3cr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yE9-Ef-3cr" firstAttribute="trailing" secondItem="PPo-lJ-qZ7" secondAttribute="trailing" constant="20" id="S9r-9Z-JIh"/>
+                            <constraint firstItem="PPo-lJ-qZ7" firstAttribute="top" secondItem="Sgk-WP-Qv4" secondAttribute="topMargin" constant="-36" id="c7s-qr-lWa"/>
+                            <constraint firstItem="PPo-lJ-qZ7" firstAttribute="leading" secondItem="yE9-Ef-3cr" secondAttribute="leading" constant="20" id="kwM-KR-Z4n"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mpu-f7-7LO"/>
+                    <connections>
+                        <outlet property="coverImageView" destination="zOf-AA-Wmq" id="w8A-Ce-v7g"/>
+                        <outlet property="trackNameLabel" destination="sEJ-be-APk" id="t4P-oO-5ON"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWM-u0-gQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
