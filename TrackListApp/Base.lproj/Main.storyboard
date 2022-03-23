@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Track list-->
         <scene sceneID="sxD-mc-VGR">
             <objects>
-                <tableViewController id="qIL-zg-C2c" sceneMemberID="viewController">
+                <tableViewController id="qIL-zg-C2c" customClass="TrackListViewController" customModule="TrackListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7Or-Ic-tFw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="qIL-zg-C2c" id="Pkf-ee-7yN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="eoY-7H-JO2"/>
+                    <navigationItem key="navigationItem" title="Track list" id="eoY-7H-JO2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRW-UR-G3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,8 +40,8 @@
         <scene sceneID="cFU-8i-d2R">
             <objects>
                 <navigationController id="tq1-pV-c4j" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lAI-IE-kcJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lAI-IE-kcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
