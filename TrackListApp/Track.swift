@@ -12,7 +12,7 @@ struct Track {
     var title: String {
         "\(artist) - \(song)"
     }
-    
+      
     static func getTrackList() -> [Track] {
         [
             Track(artist: "Alberto Ruiz", song: "7 Elements (Original Mix)"),
